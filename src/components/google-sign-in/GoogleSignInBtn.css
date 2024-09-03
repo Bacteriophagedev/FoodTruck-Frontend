@@ -1,0 +1,16 @@
+.google-signin-button {
+  height: 48px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #828282;
+  border: 1px solid #d0d5dd;
+  background-color: transparent;
+  width: 80%;
+}
+.google-signin-button img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}

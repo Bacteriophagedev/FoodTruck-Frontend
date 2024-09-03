@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter';
+
+    @media screen and (max-width: 445px){
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 40.65rem;
+    height: 29rem;
+    justify-content: center;
+
+    align-items: center;
+    border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.16);
+margin-top: 10%;
+text-align: center;
+
+    @media screen and (max-width: 445px){
+        width: 90%;
+        height: 20rem;
+    }
+}
+.container div{
+    margin-bottom: 2rem;
+}
+
+h1{
+    color: #000;
+
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+margin-bottom: 1rem; /* 38.71px */
+}
+
+.feint{
+    color: var(--Grey-400, #98A2B3);
+text-align: center;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+letter-spacing: 0.15px;
+width: 24.6rem;
+}
+
+.lastText{
+    color: var(--Main-Text, #101828);
+text-align: center;
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 18.2px */
+letter-spacing: 0.15px;
+}
+
+.encrypt{
+    color: var(--Main-Text, #101828);
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 18.2px */
+letter-spacing: 0.15px;
+align-items: right;
+width: 50%;
+margin-left:auto;
+}
+
+select{
+    display: flex;
+padding: 0.4rem 1.4rem 0.56rem 0.62rem;
+align-items: center;
+border-radius: 0.5rem;
+border: 1px solid var(--Gray-1, #333);
+background: var(--Neutral-White, #FFF);
+width: 80%;
+height: 4.5rem;
+}
+
+option{
+    color: var(--Neutral-900, #0F172A);
+
+/* Body/text-base/font-semibold */
+font-family: Inter;
+font-size: 5rem;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+}

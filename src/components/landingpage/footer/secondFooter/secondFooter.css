@@ -1,0 +1,115 @@
+.SecondFooter-layout {
+  display: block;
+  padding: 1.75rem 0rem;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+  border-radius: 0.75rem;
+  /* background: #ffffff; */
+}
+
+@media screen and (max-width: 1024px) {
+  .SecondFooter-layout {
+    gap: 0.1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .SecondFooter-layout {
+    gap: 0.1rem;
+    padding: 0.8rem 1.1rem;
+    margin-top: -2rem;
+  }
+}
+
+.text-field {
+  display:block;
+}
+
+
+.text-field-text {
+  color: #4b5768;
+  font-family: "Product Sans-Regular", Helvetica;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  word-spacing: 0.1rem;
+}
+
+.text-field-text-span {
+  color: #f2994a;
+  font-family: "Product Sans-Regular", Helvetica;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .text-field-text-span {
+    font-size: 0.6rem;
+    line-height: 0.5rem;
+  }
+}
+
+
+.text-field-text-span a {
+  color: #f2994a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondFooter-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10.5rem;
+  align-self:center;
+  position: relative;
+  /* align-self: stretch; */
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .secondFooter-contact {
+    flex-direction: row;
+    align-items: flex-start;
+    gap:5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .secondFooter-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content:space-around;
+    text-align: left;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .contact {
+    flex-direction: row;
+    align-items: flex-start;
+    gap:-1rem;
+  }
+}
+
+.rectangle-pic {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .rectangle-pic {
+    margin-top: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}

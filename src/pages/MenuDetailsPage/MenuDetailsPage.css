@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.menu-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-details-area {
+  width: 100%;
+  background-color: #f9fafb;
+}
+.food-display-section img:first-child {
+  margin: 0.5rem;
+  height: 220px;
+  width: 30%;
+}
+
+.food-display-section img {
+  margin: 0.5rem;
+  height: 220px;
+  width: 25%;
+}
+
+.food-display-section {
+  margin-left: 270px;
+  margin-top: 6rem;
+ 
+}
+
+.food-details {
+  max-width: 686px;
+  margin: 1rem 0 1rem 0rem;
+}
+
+.food-details p {
+  margin-top: 0.7rem;
+  line-height: 1.4rem;
+}
+.food-details p:first-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black !important;
+}
+.food-details p:nth-child(2) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.food-details p:last-child {
+  color: #828282;
+}
+.food-description {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.extras-section {
+  margin: 1.5rem 3rem 1rem 0rem;
+}
+
+.extras-section .drinks-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.extras-section-heading {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: black !important;
+}
+.extras-section .drinks-section img {
+  width: 105px;
+  height: 78.152px;
+  background-color: #ffffff;
+  margin-right: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu-btn-container {
+  margin: 2.5rem 3rem 1rem 0rem;
+  display: flex;
+}
+
+.menu-btn-container button:first-child {
+  width: 200px;
+  margin-right: 0.8rem;
+  background-color: transparent;
+  color: #f2994a;
+  border: 1.5px solid #f2994a;
+  font-weight: normal;
+}
+.menu-btn-container button:last-child {
+  width: 170px;
+  font-weight: normal;
+  background-color: #f2994a;
+  color: #ffffff;
+}

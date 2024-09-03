@@ -1,0 +1,32 @@
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --orange: rgba(242, 153, 74, 1);
+    --white: rgba(255, 255, 255, 1);
+  }
+  
+  .error-container {
+    display: flex;
+    padding: 5.75rem 8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    gap: 3.5rem;
+  }
+  
+  .error-img{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 5%;
+    padding: 5px;
+    background-color: #f2994a;
+    box-shadow: 0px 0px 20px 0px rgba(0.5,1,1,0.75);
+  }
+
+  .error-img img{
+    border-radius: 5%;
+    object-fit: contain;
+  }

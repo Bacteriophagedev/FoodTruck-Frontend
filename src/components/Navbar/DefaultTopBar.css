@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.logo {
+    background-image: url('/images/FTLogo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    margin: 10px;
+    width: 160px;
+}
+
+.list {
+    display: flex;
+    gap: 13px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+li {
+    cursor: pointer;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+    color: #F2994A;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+}
+
+.button1 {
+    background-color: white;
+    border: 1px solid #F2994A;
+    border-radius: 4px;
+    color: #F2994A;
+    cursor: pointer;
+    font-size: 9px;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 80px;
+}
+
+.button2 {
+    background-color: #F2994A;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 9px;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 80px;
+}

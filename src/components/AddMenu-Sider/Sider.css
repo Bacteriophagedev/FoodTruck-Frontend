@@ -1,0 +1,63 @@
+body,
+html {
+  background: var(--Grey-50, #f9fafb);
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  padding: 1em;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: -38px;
+  border-right: solid whitesmoke 1px;
+  box-shadow: 2px 0px whitesmoke;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 220px;
+}
+
+.logo {
+  background-image: url("images/Logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  height: 55px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.sider-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--gray-700, #3f3f46);
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.sider-item:hover {
+  color: #f2994a;
+}
+
+.sider-item img {
+  margin-right: 4px;
+  width: 22px;
+  height: 22px;
+  transition: color 0.3s ease;
+}
+
+.sider-item img:hover {
+  background-color: #f2994a;
+}
+
+.Sidercont {
+  margin-top: 20px;
+}
