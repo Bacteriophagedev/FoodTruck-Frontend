@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { Routes, Route } from "react-router-dom";
 // import OrderConfirmation from "./Components/OrderConfirmation/OrderConfirmation";
 import LandingPage from "./pages/LandingPage";
@@ -52,21 +53,25 @@ function App() {
       {/* <Route path="/addmenu" element={<AddMenu />} /> */}
 
       <Route
-        path="/customerdashboard/*" element={ <CustomerProtectedRoute>
-           <Routes>
-            <Route index element={<Dashboard />}/>
-          </Routes>
-        {/* <Route path="payout" element={  <Dashboard />}/> */}
-        </CustomerProtectedRoute>}
+        path="/customerdashboard/*"
+        element={
+          <CustomerProtectedRoute>
+            <Routes>
+              <Route index element={<Dashboard />} />
+            </Routes>
+            {/* <Route path="payout" element={  <Dashboard />}/> */}
+          </CustomerProtectedRoute>
+        }
       />
       <Route
         path="/addmenu/*"
         element={
-        <RestaurantProtectedRoute>
-          <Routes>
-            <Route index element={<AddMenu />}/>
-          </Routes>
-        </RestaurantProtectedRoute>}
+          <RestaurantProtectedRoute>
+            <Routes>
+              <Route index element={<AddMenu />} />
+            </Routes>
+          </RestaurantProtectedRoute>
+        }
       />
       <Route path="/customerdashboard" element={<Dashboard />} />
       <Route path="/orderconfirmation" element={<OrderConfirmation />} />
@@ -74,7 +79,7 @@ function App() {
       {/* <Route path="/addmenu" element={<AddMenu />} /> */}
       <Route path="/findrestaurant" element={<FindARestaurant />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -26,7 +26,7 @@ const FindARestaurant = () => {
   const handleSearch = async () => {
     try {
       const response = await fetch(
-        `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${searchQuery}&key=AIzaSyD8L9B1LPIYqb4n4mWHAb1nlTEdsvo_UGc`
+        `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${searchQuery}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`
       );
       const data = await response.json();
       setSearchResults(data.results);
@@ -47,7 +47,7 @@ const FindARestaurant = () => {
         <button onClick={handleSearch}>Search</button>
       </div>
       <LoadScript
-        googleMapsApiKey="AIzaSyD8L9B1LPIYqb4n4mWHAb1nlTEdsvo_UGc"
+        googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY || ""}
         libraries={["places"]}
       >
         <GoogleMap
@@ -86,6 +86,7 @@ const FindARestaurant = () => {
 };
 
 export default FindARestaurant;
+
 
 // import React, { useState } from 'react';
 // import { Slider, TextField } from '@material-ui/core';
